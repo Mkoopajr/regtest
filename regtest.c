@@ -30,7 +30,7 @@ int main(int argc, char* argv[])
         printf("Match start index: %lld\n", pmatch[0].rm_so);
         printf("Match end index: %lld\n", pmatch[0].rm_eo);
         // This can be cleaned up so it doesn't throw warning.
-        printf("Match value: %.*s\n", pmatch[0].rm_eo - pmatch[0].rm_so, &string[pmatch[0].rm_eo]);
+        printf("Match value: %.*s\n", pmatch[0].rm_eo - pmatch[0].rm_so, &string[pmatch[0].rm_so]);
     }
     else
     {
